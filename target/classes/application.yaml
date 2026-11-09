@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: backendseguro
+  # Configurações principais da aplicação Spring Boot
+  main:
+    # Permite que um Bean substitua outro com o mesmo nome
+    allow-bean-definition-overriding: true
+
+app:
+  # Configurações relacionadas ao token JWT
+  jwt:
+    # Chave secreta utilizada para assinar e validar os tokens JWT
+    secret: n0loh6aK3PrLhobX+W1n1h/bBQR/XyGWRGTaaWUT2K4=
+    # Tempo de expiração do token em milissegundos
+    # 60000 ms = 60 segundos = 1 minuto
+    expiration-ms: 60000
